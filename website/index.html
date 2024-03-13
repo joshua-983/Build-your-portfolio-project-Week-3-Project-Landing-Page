@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Food Delivery Website</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .icon-bar {
+            width: 100%;
+            background-color: #555;
+            overflow: auto;
+        }
+
+        .icon-bar a {
+            float: left;
+            width: 20%;
+            text-align: center;
+            padding: 10px 0;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .active {
+            background-color: #97ada5;
+        }
+
+        body {
+            background-image: url('index.image/pexels-miguel-á-padriñán-19670.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+        }
+
+        h1, h2 {
+            font-style: oblique;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="icon-bar">
+    <a class="active" href="#"><i class="fa fa-home"></i></a>
+    <a href="#"><i class="fa fa-search"></i></a>
+    <a href="#"><i class="fa fa-envelope"></i></a>
+    <a href="#"><i class="fa fa-globe"></i></a>
+    <a href="#"><i class="fa fa-trash"></i></a>
+</div>
+
+<div>
+    <h1>Food Delivery</h1>
+    <h2>We are here for you</h2>
+</div>
+
+<div>
+    <a href="#">About Us</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Your Orders</a>
+    <a href="#">Payment Method</a>
+</div>
+
+<div>
+    <h3>About Us</h3>
+    <p>Welcome to our Food Delivery Website, where passion for food meets convenience. Our story revolves around a shared love for culinary delights and a commitment to bring the best dining experiences to your doorstep.</p>
+    <h4>Our Mission</h4>
+    <p>We aim to redefine the way you experience food delivery. We are driven by the mission to connect you with your favorite restaurants effortlessly, offering a diverse range of cuisines and flavors right at your fingertips.</p>
+    <h4>Our Team</h4>
+    <p>We are a passionate team of food enthusiasts, tech experts, and customer service professionals working together to ensure a seamless and delightful experience for you. Our commitment to quality and innovation sets us apart in the world of food delivery.</p>
+</div>
+
+<div id="food-container">
+    <!-- Your food items go here -->
+</div>
+
+<div id="cart-page" class="cart-toggle">
+    <!-- Your cart items and checkout section go here -->
+</div>
+
+<div id="cart">
+    <!-- Your cart and checkout details go here -->
+</div>
+
+<style>
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  </style>
+  <body>
+  
+  <h2 style="text-align:center">Slideshow Gallery</h2>
+  
+  <div class="container">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="index.image/Banku and okro stew images (2).jpeg" style="width:50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="index.image/Riceballs and groundnut soup maxresdefault.jpg" style="width:50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="index.image/Nigerian-fried-rice-recipe-main-photo-3.jpg" style="width:50%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="index.image/kokonte-and-groundnut-soup.webp" style="width:50%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="index.image/Jollof-Rice-With-Chicken.jpg" style="width:50%">
+    </div>
+      
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src="index.image/Fufu.jpeg" style="width:50%">
+    </div>
+      
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="index.image/Banku and okro stew images (2).jpeg" style="width:100%" onclick="currentSlide(1)" alt="Bank and okro stew">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="index.image/Riceballs and groundnut soup maxresdefault.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rice Ball and groundnut Soup">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="index.image/Nigerian-fried-rice-recipe-main-photo-3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Fried rice">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="index.image/kokonte-and-groundnut-soup.webp" style="width:100%" onclick="currentSlide(4)" alt="kokonte-and-groundnut-soup">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="index.image/Jollof-Rice-With-Chicken.jpg" style="width:100%" onclick="currentSlide(5)" alt="Jollof-Rice-With-Chicken">
+      </div>    
+      <div class="column">
+        <img class="demo cursor" src="index.image/Fufu.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Fufu">
+      </div>
+    </div>
+  </div>
+  
+  <script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+  </script>
+      
+
+<section id="about-us">
+    <h2>About Us</h2>
+    <p><!-- Your personal story and project timeline go here --></p>
+    <!-- Team Members and GitHub Repository Links -->
+    <ul>
+        <li><a href="linkedin-url" target="_blank">LinkedIn</a></li>
+        <li><a href="Instagram-url" target="_blank">Instagram</a></li>
+        <li><a href="twitter-url" target="_blank">Twitter</a></li>
+    </ul>
+</section>
+
+<footer>
+    <p>&copy; 2024 Your Website. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
